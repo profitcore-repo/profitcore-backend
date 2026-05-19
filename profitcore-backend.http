@@ -1,0 +1,6 @@
+@profitcore_backend_HostAddress = http://localhost:5269
+
+GET {{profitcore_backend_HostAddress}}/health
+Accept: application/json
+
+###

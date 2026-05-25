@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("profitcore-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+213ac2b442e37a99468f05c89dc856772795ed4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+795053e38924a9a227b9536582db199b387504ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("profitcore-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("profitcore-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,6 +5,7 @@ using profitcore_backend.Application.Health;
 using profitcore_backend.Domain.Health.Ports;
 using profitcore_backend.Infrastructure.Health;
 using profitcore_backend.Infrastructure.Errors;
+using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,11 @@ builder.Services.AddScoped<IGetHealthCheckUseCase, GetHealthCheckUseCase>();
 var app = builder.Build();
 
 app.UseExceptionHandler();
+
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
 
 if (app.Environment.IsDevelopment())
 {
